@@ -1,0 +1,45 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+struct Book
+{
+    public string bookName;
+    public string authorName;
+    public float price;
+    public string publisher;
+}
+
+namespace Struct
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Book b1;//声明一个book型变量
+            //为变量b1成员赋值
+            b1.bookName = "Math";
+            b1.authorName = "Deng gang";
+            b1.price = 30;
+            b1.publisher = "AAA";
+            Console.WriteLine("\n\t图书信息\n");
+            Console.WriteLine("书名：{0}\n", b1.bookName);
+            Console.WriteLine("作者：{0}\n", b1.authorName);
+            Console.WriteLine("价格：{0}\n", b1.price);
+            Console.WriteLine("出版商：{0}\n", b1.publisher);
+            Book[] books = new Book[5];
+            for (int i = 0; i < books.Length; i++)
+            {
+                Console.WriteLine("");
+                books[i].bookName = Console.ReadLine();
+            }
+            Console.WriteLine(books[1].bookName);
+            Console.ReadKey();
+        }
+    }
+}
+//一个新结构的变量可以用关键字new来创建,也可以不用new关键字创建,这样不会调用此结构的任何构造函数
+//相反,通过结构变量名字直接给数据成员赋值时,必须初始化所有数据成员
+//不能通过属性或方法进行初始化,以为在初始化成员之前,没有一个数据成员能够被调用,所以必须声明为public

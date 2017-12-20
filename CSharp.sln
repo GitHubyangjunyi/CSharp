@@ -203,6 +203,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Event", "Event\Event.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multiplication", "Multiplication\Multiplication.csproj", "{220B412C-68EC-45F7-9AEF-025C6C8B2DF2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawPolygon", "DrawPolygon\DrawPolygon.csproj", "{15BB98B9-3856-411E-8E2C-ED41054DC297}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graphic", "Graphic\Graphic.csproj", "{3AD4F641-FEED-48A6-A5A8-2A09E5CFD6DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -609,6 +613,14 @@ Global
 		{220B412C-68EC-45F7-9AEF-025C6C8B2DF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{220B412C-68EC-45F7-9AEF-025C6C8B2DF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{220B412C-68EC-45F7-9AEF-025C6C8B2DF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15BB98B9-3856-411E-8E2C-ED41054DC297}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15BB98B9-3856-411E-8E2C-ED41054DC297}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15BB98B9-3856-411E-8E2C-ED41054DC297}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15BB98B9-3856-411E-8E2C-ED41054DC297}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AD4F641-FEED-48A6-A5A8-2A09E5CFD6DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AD4F641-FEED-48A6-A5A8-2A09E5CFD6DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AD4F641-FEED-48A6-A5A8-2A09E5CFD6DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AD4F641-FEED-48A6-A5A8-2A09E5CFD6DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

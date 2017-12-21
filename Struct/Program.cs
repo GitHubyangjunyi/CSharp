@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-struct Book
+struct Book//结构类型声明应放在Main方法外面
 {
-    public string bookName;
+    public string bookName;//访问权限
     public string authorName;
     public float price;
     public string publisher;

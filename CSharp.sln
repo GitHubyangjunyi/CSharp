@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2003
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayGetMax", "ArrayGetMax\ArrayGetMax.csproj", "{E2A96068-2DB4-4F85-AD22-4E08953262F0}"
 EndProject
@@ -206,6 +206,16 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawPolygon", "DrawPolygon\DrawPolygon.csproj", "{15BB98B9-3856-411E-8E2C-ED41054DC297}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graphic", "Graphic\Graphic.csproj", "{3AD4F641-FEED-48A6-A5A8-2A09E5CFD6DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Format", "Format\Format.csproj", "{0ABB5CD1-7236-4CC6-AD9A-5DC52959C618}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindRoot", "FindRoot\FindRoot.csproj", "{9F2380AB-95F5-417E-8EAD-597FD247D443}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindRoot2", "FindRoot2\FindRoot2.csproj", "{B9C98AE3-81AB-4D6A-B28E-189446653035}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assert", "Assert\Assert.csproj", "{12627987-D1E1-47C9-95D9-67783F28F095}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelectionSort", "SelectionSort\SelectionSort.csproj", "{FCF5325D-203D-4D46-8FC2-DCFA79BED23D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -621,6 +631,26 @@ Global
 		{3AD4F641-FEED-48A6-A5A8-2A09E5CFD6DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AD4F641-FEED-48A6-A5A8-2A09E5CFD6DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AD4F641-FEED-48A6-A5A8-2A09E5CFD6DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ABB5CD1-7236-4CC6-AD9A-5DC52959C618}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ABB5CD1-7236-4CC6-AD9A-5DC52959C618}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ABB5CD1-7236-4CC6-AD9A-5DC52959C618}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ABB5CD1-7236-4CC6-AD9A-5DC52959C618}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F2380AB-95F5-417E-8EAD-597FD247D443}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F2380AB-95F5-417E-8EAD-597FD247D443}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F2380AB-95F5-417E-8EAD-597FD247D443}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F2380AB-95F5-417E-8EAD-597FD247D443}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9C98AE3-81AB-4D6A-B28E-189446653035}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9C98AE3-81AB-4D6A-B28E-189446653035}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9C98AE3-81AB-4D6A-B28E-189446653035}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9C98AE3-81AB-4D6A-B28E-189446653035}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12627987-D1E1-47C9-95D9-67783F28F095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12627987-D1E1-47C9-95D9-67783F28F095}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12627987-D1E1-47C9-95D9-67783F28F095}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12627987-D1E1-47C9-95D9-67783F28F095}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCF5325D-203D-4D46-8FC2-DCFA79BED23D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCF5325D-203D-4D46-8FC2-DCFA79BED23D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCF5325D-203D-4D46-8FC2-DCFA79BED23D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCF5325D-203D-4D46-8FC2-DCFA79BED23D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

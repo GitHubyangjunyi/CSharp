@@ -12,13 +12,11 @@ namespace Out2
         {
             //定义一个double数组
             double[] arr = { 1.2, 1, 2.2, 3, 4, 5.5, 6, -19, -1, 20, 19, 17.8 };
-            double max, min, avg;
             //调用GetValues方法,使用out参数实现引用传递
-            GetValues(arr, out max, out min, out avg);
+            GetValues(arr, out double max, out double min, out double avg);
             Console.WriteLine("max={0},min={1},avg={2}", max, min, avg);
             int x = 2, y = 3;
-            int sum, power;
-            calc(x, y, out sum, out power);
+            Calc(x, y, out int sum, out int power);//内联声明变量
             Console.WriteLine(sum);
             Console.WriteLine(power);
             Console.ReadKey();
@@ -37,7 +35,7 @@ namespace Out2
             }
             avg = sum / nums.Length;
         }
-        public static void calc(int x, int y, out int z, out int w)
+        public static void Calc(int x, int y, out int z, out int w)
         {
             z = x + y;
             w = x * y;

@@ -10,7 +10,7 @@ namespace ObjectReset
     {
         static void Main(string[] args)
         {
-            Person p1 = new Person() { Name = "康玉娴", Age = 20, Gender = '女' };
+            Person p1 = new Person() { Name = "kyx", Age = 20, Gender = '女' };
             Console.WriteLine("我的名字是:" + p1.Name + "年龄是:" + p1.Age + "性别为" + p1.Gender);
             Console.ReadKey();
         }

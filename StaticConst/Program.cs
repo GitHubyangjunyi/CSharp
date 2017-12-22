@@ -14,7 +14,7 @@ namespace StaticConst
             Console.WriteLine("ID={0}", p1.ID);
             Console.WriteLine("count={0}", Person.count);//静态常量的访问需要像访问静态成员一样,但是在声明常数时不需要使用static
             Console.WriteLine("name={0}", p1.name);      //在声明常量时关键字const前的修饰符可以使用new,public,protected,internal,private
-            Person p2 = new Person("康玉娴", 123456);
+            Person p2 = new Person("kyx", 123456);
             Console.WriteLine("ID={0}", p2.ID);
             Console.WriteLine("count={0}", Person.count);
             Console.WriteLine("name={0}", p2.name);

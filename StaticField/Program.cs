@@ -14,7 +14,7 @@ namespace StaticField
             Console.WriteLine("ID={0}", p1.ID);
             Console.WriteLine("count={0}", Person.count);//静态字段属于类本身,而不属于某个对象.无论生成多少个对象,对静态字段的访问必须通过类
             Console.WriteLine("name={0}", p1.name);      //静态字段在类的实例间共享,而实例字段属于类的某个特定实例
-            Person p2 = new Person("康玉娴");
+            Person p2 = new Person("kyx");
             Console.WriteLine("ID={0}", p2.ID);
             Console.WriteLine("count={0}", Person.count);
             Console.WriteLine("name={0}", p2.name);

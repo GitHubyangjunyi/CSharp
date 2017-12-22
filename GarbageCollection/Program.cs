@@ -12,7 +12,7 @@ namespace GarbageCollection
         {
             Student s1 = new Student();
             Student s2 = new Student();
-            s1.Name = "康玉娴";
+            s1.Name = "kyx";
             s2.Name = "kyx";
             s2 = null;
             GC.Collect();//通知运行环境执行垃圾回收.

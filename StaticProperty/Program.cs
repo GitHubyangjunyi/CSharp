@@ -12,14 +12,14 @@ namespace StaticProperty
         {
             Student.intNo = 10;
             Student s = new Student();
-            s.Name = "康玉娴";
+            s.Name = "kyx";
             s.Age = 20;
             Console.WriteLine("Student.intNo={0}", Student.Counter);//只有大写Counter,小写私有的
             Console.WriteLine("s.Name={0}", s.Name);
             Console.WriteLine("s.Age={0}", s.Age);
             Student.intNo = 30;//要想改变静态字段的值,只能通过类名.静态字段名来对它重新赋值
             Student ss = new Student();
-            ss.Name = "康玉娴2";
+            ss.Name = "kyx2";
             ss.Age = 22;
             Console.WriteLine("Student.intNo={0}", Student.Counter);//只有大写Counter,小写私有的,这个和输出引用是不一致的
             Console.WriteLine(Student.intNo);

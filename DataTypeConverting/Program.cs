@@ -22,7 +22,32 @@ namespace DataTypeConverting
             //目标类型 变量 =（目标类型）值
             Console.WriteLine("x={0:F2}", 123456789);//输出浮点数,小数点占用两位
             Console.WriteLine("x={0:F4}", 123456789);//输出浮点数,小数点占用四位
+            int a = 'a';
+            Console.WriteLine(a);
             Console.ReadKey();
         }
     }
 }
+//==整数类型
+//有符号sbyte一个字节
+//      short两个字节
+//      int四个字节
+//      long八个字节
+//无符号byte
+//      ushort
+//      uint
+//      ulong
+//字符类型char如'a'  '/uAOB1'u表示Unicode
+//==实数类型
+//单精度float
+//双精度double
+//==十进制类型decimal
+//==布尔类型bool只有true和false不能用0或1代替
+//==字符串类型string是引用类型,但是对字符串常量有特殊处理
+//==推断类型var(C#3.0)其类型由编译器推断,在编译时就已经确定
+//    var a = 1+2;
+//==Nullable类型(C#3.0)
+//    int? a = 32;
+//    if(a.HasValue)...判断a是不是有值
+//==Dynamic(C#4.0)由DLR支持,编译时不进行检查,运行时才确定,主要用于COM组件或其他语言交互
+//    dynamic x = new Cell();

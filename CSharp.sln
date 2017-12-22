@@ -217,6 +217,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assert", "Assert\Assert.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelectionSort", "SelectionSort\SelectionSort.csproj", "{FCF5325D-203D-4D46-8FC2-DCFA79BED23D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "File", "File\File.csproj", "{A75DD04A-BE24-466D-8BED-682EBD617D06}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -651,6 +653,10 @@ Global
 		{FCF5325D-203D-4D46-8FC2-DCFA79BED23D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCF5325D-203D-4D46-8FC2-DCFA79BED23D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCF5325D-203D-4D46-8FC2-DCFA79BED23D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A75DD04A-BE24-466D-8BED-682EBD617D06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A75DD04A-BE24-466D-8BED-682EBD617D06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A75DD04A-BE24-466D-8BED-682EBD617D06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A75DD04A-BE24-466D-8BED-682EBD617D06}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

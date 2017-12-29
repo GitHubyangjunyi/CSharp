@@ -31,6 +31,8 @@ namespace MethodReload
             Console.WriteLine();
             Console.WriteLine(Judge(1,2.00000000000000000));//编译器会首先查找精确匹配,如果找不到精确匹配,就会执行扩大基本类型转换
             Console.WriteLine(Judge(1, 2));//通过扩大基本类型转换来匹配任何一个方法,对调用进行类型转换,可以使用断点来验证执行的时哪一个函数
+            bool b = Judge(y: 1.1, x: 2.2);//参数一般需要按定义的顺序传送给方法使用命名参数允许按任意顺序传递
+            Console.WriteLine(b);
             Console.ReadKey();
         }
         //下面的方法实现两数相加

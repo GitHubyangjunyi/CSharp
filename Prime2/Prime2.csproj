@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{989A48DE-BECC-4609-8F43-97528ED962F1}</ProjectGuid>
+    <ProjectGuid>{23B8A195-5205-4516-AA70-D0B47358FA4F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Event2</RootNamespace>
-    <AssemblyName>Event2</AssemblyName>
+    <RootNamespace>Prime2</RootNamespace>
+    <AssemblyName>Prime2</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

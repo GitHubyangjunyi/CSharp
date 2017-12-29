@@ -17,16 +17,16 @@ namespace Interface
             Console.ReadKey();
         }
     }
-    interface Animal
+    interface IAnimal
     {
         void Eat();//与抽象方法的差别,无abstract
         void Run();
     }
-    interface LandAnimal : Animal
+    interface ILandAnimal : IAnimal
     {
         void LiveOnLand();
     }
-    class Dog : LandAnimal
+    class Dog : ILandAnimal
     {
         public void Eat()
         {

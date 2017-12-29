@@ -219,6 +219,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelectionSort", "SelectionS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "File", "File\File.csproj", "{A75DD04A-BE24-466D-8BED-682EBD617D06}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prime2", "Prime2\Prime2.csproj", "{23B8A195-5205-4516-AA70-D0B47358FA4F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -657,6 +659,10 @@ Global
 		{A75DD04A-BE24-466D-8BED-682EBD617D06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A75DD04A-BE24-466D-8BED-682EBD617D06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A75DD04A-BE24-466D-8BED-682EBD617D06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23B8A195-5205-4516-AA70-D0B47358FA4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23B8A195-5205-4516-AA70-D0B47358FA4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23B8A195-5205-4516-AA70-D0B47358FA4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23B8A195-5205-4516-AA70-D0B47358FA4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

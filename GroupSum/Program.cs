@@ -11,7 +11,6 @@ namespace GroupSum
         static void Main(string[] args)
         {
             int[,] arr = { { 1, 2, 3, 4 }, { 5, 6, 7, 8, }, { 9, 10, 11, 12 } };//new int [3,4]*可以省略
-            int sum = 0;
             int x = arr.GetLength(1);//指定维度中的元素总数等于4
             int y = arr.Length;     //元素总数等于12
             int z = arr.Rank;      //数组的维度等于2

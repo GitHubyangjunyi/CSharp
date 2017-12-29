@@ -96,7 +96,7 @@ namespace Circular
     }
     class YZ : CircularClass
     {
-        protected double h;
+        //protected double h;
         public YZ()
         {
 

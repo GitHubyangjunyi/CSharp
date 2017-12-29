@@ -10,7 +10,11 @@ namespace Override
     {
         static void Main(string[] args)
         {
-
+            Animal an = new Animal();
+            an.Shout();
+            Dog dog = new Dog();
+            dog.Shout();
+            Console.Read();
         }
     }
     class Animal
@@ -24,7 +28,7 @@ namespace Override
     {
         public sealed override void Shout()//密封了Shout方法,下面无法重写.使用override关键字重写方法.子类方法名,参数类型和参数个数必须与父类一致
         {
-            //base.Shout();
+            base.Shout();
             Console.WriteLine("狗的叫声!");
         }
     }

@@ -22,7 +22,7 @@ namespace Prime
                         break;
                     }
                 }
-                if (j >= k + 1)
+                if (j>=k + 1)
                 {
                     num++;
                     Console.Write(i + "\t");

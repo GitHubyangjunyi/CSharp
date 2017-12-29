@@ -10,8 +10,10 @@ namespace Inherit
     {
         static void Main(string[] args)
         {
-            Dog dog = new Dog();
-            dog.Name = "沙皮狗";
+            Dog dog = new Dog
+            {
+                Name = "沙皮狗"
+            };
             dog.Shout();
             dog.PrintName();
             dog.Shouts();

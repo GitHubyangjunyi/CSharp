@@ -12,7 +12,7 @@ namespace OperatorIs
         {
             int i = 10;
             object obj = i;//装箱转换
-            Console.WriteLine(i is int);
+            //Console.WriteLine(i is int);
             Console.WriteLine(obj is Object);
             Console.ReadKey();
         }

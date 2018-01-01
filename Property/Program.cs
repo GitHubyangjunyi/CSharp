@@ -10,9 +10,11 @@ namespace Property
     {
         static void Main(string[] args)
         {
-            Student stu = new Student("kyx", 123456, 18, "女");
-            stu.Age = -30;//字段在赋值时不能进行有效的控制,应该对字段的访问进行限制,使用属性,看下面
-            stu.Gender = "很好看";
+            Student stu = new Student("kyx", 123456, 18, "女")
+            {
+                Age = -30,//字段在赋值时不能进行有效的控制,应该对字段的访问进行限制,使用属性,看下面
+                Gender = "很好看"
+            };
             stu.Introduce();
             Console.ReadKey();
         }

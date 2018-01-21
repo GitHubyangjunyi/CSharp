@@ -112,3 +112,62 @@ namespace Generic
 //     方法体
 //  }
 //其中参数T用来定义泛型类和泛型方法的占位符,并不是一种数据类型,仅代表可能的数据类型,只有在实例化时才指定数据类型
+//where（泛型类型约束） 
+//定义：在定义泛型的时候，我们可以使用 where 限制参数的范围。
+//使用：在使用泛型的时候，你必须尊守 where 限制参数的范围，否则编译不会通过。
+ 
+//六种类型的约束：
+//T：类（类型参数必须是引用类型；这一点也适用于任何类、接口、委托或数组类型。）
+//    class MyClass<T, U>
+//        where T : class///约束T参数必须为“引用 类型{ }”
+//        where U : struct///约束U参数必须为“值 类型”
+//{ }
+//T：结构（类型参数必须是值类型。可以指定除 Nullable 以外的任何值类型。）
+//    class MyClass<T, U>
+//        where T : class///约束T参数必须为“引用 类型{ }”
+//        where U : struct///约束U参数必须为“值 类型”
+//{ }
+//T：new()（类型参数必须具有无参数的公共构造函数。当与其他约束一起使用时，new() 约束必须最后指定。）
+//class EmployeeList<T> where T : Employee, IEmployee, System.IComparable<T>, new()
+//{
+//    // ...
+//}
+//T：<基类名>（类型参数必须是指定的基类或派生自指定的基类。）
+//public class Employee { }
+
+//public class GenericList<T> where T : Employee
+//T：<接口名称>（类型参数必须是指定的接口或实现指定的接口。可以指定多个接口约束。约束接口也可以是泛型的。）
+
+//    /// <summary>
+//    /// 接口
+//    /// </summary>
+//    interface IMyInterface
+//{
+//}
+
+///// <summary>
+///// 定义的一个字典类型
+///// </summary>
+///// <typeparam name="TKey"></typeparam>
+///// <typeparam name="TVal"></typeparam>
+//class Dictionary<TKey, TVal>
+//    where TKey : IComparable, IEnumerable
+//    where TVal : IMyInterface
+//{
+//    public void Add(TKey key, TVal val)
+//    {
+//    }
+//}
+
+//T：U（为 T 提供的类型参数必须是为 U 提供的参数或派生自为 U 提供的参数。也就是说T和U的参数必须一样）
+//class List<T>
+//{
+//    void Add<U>(List<U> items) where U : T {/*...*/}
+//}
+
+//一、可用于类：
+//public class MyGenericClass<T> where T : IComparable { }
+//二、可用于方法：
+//public bool MyMethod<T>(T t) where T : IMyInterface { }
+//三、可用于委托：
+//delegate T MyDelegate<T>() where T : new()

@@ -18,6 +18,7 @@ namespace StaticConst
             Console.WriteLine("ID={0}", p2.ID);
             Console.WriteLine("count={0}", Person.count);
             Console.WriteLine("name={0}", p2.name);
+            //Person.count = 2;//无法赋值给静态常量
             Console.ReadKey();
         }
     }

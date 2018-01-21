@@ -69,3 +69,6 @@ namespace File
         }
     }
 }
+//Windows系统内部换行使用\r\n
+//要将字符串xxx\nxxxx写入文件是写入xxxxxxx不进行换行操作,如要换行,使用\r\n
+//mac下可使用\n

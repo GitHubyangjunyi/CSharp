@@ -79,7 +79,7 @@ namespace Circular
         {
 
         }
-        public Ball(double r)//:base(r)这是不是废话,如果没有定义无参的构造函数,就需要使用:base(r)避免报错.
+        public Ball(double r)//:base(r)这是不是废话,如果没有定义无参的构造函数,就需要使用:base(r)避免报错,比如把上面的无参构造函数注释掉就会报错
         {
             this.s = 4 * r * r * 3.14;
             this.v = (4 / 3.0) * r * r * r * 3.14;

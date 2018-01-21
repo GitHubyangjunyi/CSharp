@@ -15,6 +15,11 @@ namespace Foreach
             {
                 Console.Write(c + "\t");
             }
+            Console.WriteLine();
+            foreach (var c in str)
+            {
+                Console.Write(c + "\t");
+            }
             Console.ReadKey();
         }
     }

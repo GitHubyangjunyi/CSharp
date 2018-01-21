@@ -23,7 +23,7 @@ namespace StaticField
     }
     public class Person
     {
-        public static int count = 1;//静态字段
+        public static int count = 0;//静态字段
         public string name;        //实例字段
         public int ID;            //实例字段
         public Person(string n)  //构造函数

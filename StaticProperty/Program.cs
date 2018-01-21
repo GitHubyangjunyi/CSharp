@@ -11,16 +11,20 @@ namespace StaticProperty
         static void Main(string[] args)
         {
             Student.intNo = 10;
-            Student s = new Student();
-            s.Name = "kyx";
-            s.Age = 20;
+            Student s = new Student
+            {
+                Name = "kyx",
+                Age = 20
+            };
             Console.WriteLine("Student.intNo={0}", Student.Counter);//只有大写Counter,小写私有的
             Console.WriteLine("s.Name={0}", s.Name);
             Console.WriteLine("s.Age={0}", s.Age);
             Student.intNo = 30;//要想改变静态字段的值,只能通过类名.静态字段名来对它重新赋值
-            Student ss = new Student();
-            ss.Name = "kyx2";
-            ss.Age = 22;
+            Student ss = new Student
+            {
+                Name = "kyx2",
+                Age = 22
+            };
             Console.WriteLine("Student.intNo={0}", Student.Counter);//只有大写Counter,小写私有的,这个和输出引用是不一致的
             Console.WriteLine(Student.intNo);
             Console.WriteLine("ss.Name={0}", ss.Name);
@@ -31,9 +35,9 @@ namespace StaticProperty
     class Student
     {
         public static int intNo;//公共静态字段,如果把静态属性修饰符static注释掉,那么主函数的第一句就会报错
+        private static int counter = 0;//私有静态字段
         private string name;   //私有实例字段
         private int age;      //私有实例字段
-        private static int counter = 0;//私有静态字段
         public string Name
         {
             get { return name; }//可读写实例属性

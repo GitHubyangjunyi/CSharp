@@ -18,6 +18,7 @@ namespace OperatorPlus
             Console.WriteLine("a+s1={0}", a + s1);
             Console.WriteLine("b+c={0}", b + c);
             Console.WriteLine("{0}", (int)c);
+            Console.WriteLine("连接"+s1);
             Console.ReadKey();
         }
     }

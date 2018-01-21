@@ -23,6 +23,11 @@ namespace DataTypeConverting2
             //如果double值过大,则结果为正无穷大或负无穷大;如果值为NaN,结果还是NaN
             //(4)对于从float或double到decimal的转换,源数据转换成decimal形式,并舍入到小数点后28位,如果源数据太小或者为无穷或者为NaN,则会引发OverflowException异常
             //(5)对于从decimal到float或double的转换,decimal舍入到最接近float或double的值,这种转换会损失精度,但不会发生异常
+            int n1 = 10, n2 = 3;
+            double result = n1 / n2;//还是等于3
+            Console.WriteLine(result);
+            result = n1*1.0 / n2;//等于3.3333~
+            Console.WriteLine(result);
             Console.ReadKey();
         }
     }

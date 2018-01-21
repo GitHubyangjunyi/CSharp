@@ -19,6 +19,11 @@ namespace OperatorPlusPlusAndSubtractSubtract
             Console.WriteLine("c={0},b={1}", c, b);
             c = --b;//等价于b=b-1;c=b；
             Console.WriteLine("c={0},b={1}", c, b);
+            int x = 5;
+            int y = x++ + ++x * 2 + --x + x++;//++运算符优先级高于*运算符,一元运算符优先级高于二元运算符
+            //运算符优先级参阅帮助文档
+            Console.WriteLine(x);
+            Console.WriteLine(y);
             Console.ReadKey();
         }
     }

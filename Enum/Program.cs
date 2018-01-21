@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Enum
 {
-    public enum Color
+    public enum Color//此处不能使用private,这里默认是public
     {
         red = 5, yellow, green//以次类推
     }
@@ -20,6 +20,11 @@ namespace Enum
             Console.WriteLine("red={0}", (int)Color.red);//枚举成员需要经过显式转换才能显示出相应类型的值
             Console.WriteLine("yellow={0}", (int)Color.yellow);
             Console.WriteLine("green={0}", (int)Color.green);
+            Console.WriteLine("///////////////////////////////////////////////////");
+            Color c1 = Color.green;
+            Console.WriteLine((int)c1);
+            Color c2 = Color.red;
+            Console.WriteLine((int)c2);
             Console.ReadKey();
         }
     }

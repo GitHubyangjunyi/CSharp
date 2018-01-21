@@ -10,6 +10,7 @@ namespace StringMethod
     {
         static void Main(string[] args)
         {
+            //String strtest = "test";
             string str1 = "    Welcome to Beijing!    ";//字符串常量前后各有4个空格
             Console.WriteLine("{0}:{1}", str1, str1.Length);//Length属性可以获取字符串长度即字符串中包括空格在内字符的个数是字符串对象唯一的属性
             string str2 = str1.Trim();//Trim()方法可以去掉字符串两端的空格

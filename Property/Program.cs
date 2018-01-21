@@ -12,10 +12,13 @@ namespace Property
         {
             Student stu = new Student("kyx", 123456, 18, "女")
             {
-                Age = -30,//字段在赋值时不能进行有效的控制,应该对字段的访问进行限制,使用属性,看下面
-                Gender = "很好看"
+                Age = 20,//字段在赋值时不能进行有效的控制,应该对字段的访问进行限制,使用属性,看下面
+                Gender = "女"
             };
             stu.Introduce();
+            Student stud = new Student();
+            stud.Age = -10;
+            stud.Introduce();
             Console.ReadKey();
         }
     }
@@ -32,7 +35,6 @@ namespace Property
         {
             get { return intNo; }//只读属性
         }
-
         private int age;
         public int Age//定义了公有属性Age用于封装age
         {
@@ -64,6 +66,10 @@ namespace Property
             intNo = num;
             age = ag;
             Gender = gen;
+        }
+        public Student()
+        {
+
         }
     }
 }

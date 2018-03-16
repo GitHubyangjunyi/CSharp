@@ -15,6 +15,7 @@ namespace Delegate
         static void Main(string[] args)
         {
             //这里就是具体阐述这个命令是干什么的，本例是MrZhang.BuyTicket“小张买车票”这时候委托被附上了具体的方法
+            //注意,声明委托可以不使用delegate关键字
             BugTicketEventHandler myDelegate = new BugTicketEventHandler(MrZhang.BuyTicket);
             //上面的语句声明一个委托并且订阅了小张买票,当使用委托时,小张买票函数就会执行
             myDelegate += MrZhang.BuyMovieTicket;//多播委托
@@ -33,8 +34,9 @@ namespace Delegate
             {
                 Console.WriteLine("匿名方法:2.0版本的规范匿名方法实现!黄牛把票都买光了!");//lambda表达式
             };
-            myDelegate();
-            Console.ReadKey();
+            myDelegate(); 
+ 
+             Console.ReadKey();
         }
     }
     public class MrZhang

@@ -49,10 +49,22 @@ namespace Array
             }
             Console.WriteLine(sum3);
             Console.WriteLine("////////////////////////////////////////");
-            System.Collections.ArrayList st = new ArrayList();
-            st.Add(89); st.Add(58); st.Add(85);
-            st.Add(72); st.Add(69); st.Add(92);
-            st.Add(76); st.Add(82); st.Add(96);
+            //System.Collections.ArrayList st = new ArrayList();
+            //st.Add(89); st.Add(58); st.Add(85);
+            //st.Add(72); st.Add(69); st.Add(92);
+            //st.Add(76); st.Add(82); st.Add(96);
+            System.Collections.ArrayList st = new ArrayList//系统建议的简化版本
+            {
+                89,
+                58,
+                85,
+                72,
+                69,
+                92,
+                76,
+                82,
+                96
+            };
             st.Sort();
             st.Reverse();
             int i = 1;
@@ -61,6 +73,11 @@ namespace Array
                 Console.WriteLine("第{0}名: {1}", i, item);
                 i++;
             }
+            ArrayList arr = new ArrayList();
+            arr.Insert(0, 4);//在动态数组的第一位插入4,第一个参数表示下标,第二个表示要插入的值
+            arr.Insert(0, 100);
+            Console.WriteLine(arr[0]);
+            Console.WriteLine(arr[1]);//插入后原来的元素往后退
             Console.ReadKey();
         }
         static int Sum(int[] a)//对数组进行计算时应该将其封装为一个方法,数组传进去搞定,不同类型使用重载
@@ -74,7 +91,7 @@ namespace Array
         }
     }
 }
-//数组是引用类型,所以是对象
+//数组是引用类型,所以是对象,数组可以初始化为0个成员,但是无实际意义
 //在C中不允许对二维和二维以上的多维数组的部分元素初始化,数组中单个的元素在分配时会自动初始化,C#是唯一具有多维数组类型的程序语言
 //并允许任意类型的数组,包括由数组构成的数组的叫做交错数组,利用两对方括号就可以获得一个交错的二维数组
 //double[][] up;//二维数组

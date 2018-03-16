@@ -20,7 +20,7 @@ namespace Generic2
             Geometric<Rectangle> rect = new Geometric<Rectangle>
             {
                 MyClass = new Rectangle(20, 10)
-            };////实例化T类型为一个Rectangle对象
+            };//实例化T类型为一个Rectangle对象
             rect.Print();
             Geometric<Circle> cl = new Geometric<Circle>
             {

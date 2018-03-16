@@ -14,6 +14,7 @@ namespace Foreach
             foreach (char c in str)
             {
                 Console.Write(c + "\t");
+                //c += 2; //无法为“c”赋值，因为它是“foreach 迭代变量”
             }
             Console.WriteLine();
             foreach (var c in str)

@@ -14,6 +14,9 @@ namespace Interface
             dog1.Eat();
             dog1.Run();
             dog1.LiveOnLand();
+            Console.WriteLine("////////////////////");
+            IHello x = new Derived();
+            x.Hello();
             Console.ReadKey();
         }
     }
@@ -26,7 +29,8 @@ namespace Interface
     {
         void LiveOnLand();
     }
-    class Dog : ILandAnimal
+    class Dog : ILandAnimal//实现了接口就要使用public修饰
+                           //子类重写父类方法时,不能使用比父类方法更为严格的访问权限,如果父类方法访问修饰符是public,子类方法就不能是private
     {
         public void Eat()
         {
@@ -40,6 +44,20 @@ namespace Interface
         {
             Console.WriteLine("实现LiveOnLand方法!");
         }
+    }
+    interface IHello
+    {
+        void Hello();
+    }
+    class Base : IHello
+    {
+        public void Hello()
+        { System.Console.WriteLine("Hello in Base!"); }
+    }
+    class Derived : Base
+    {
+        public new void Hello()
+        { System.Console.WriteLine("Hello in Derived!"); }
     }
 }
 //接口是由方法属性事件和索引器这四种成员类型任意组合构成的框架,没有描述任何对象的示例

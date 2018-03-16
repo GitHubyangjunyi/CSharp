@@ -16,8 +16,10 @@ namespace Property
                 Gender = "女"
             };
             stu.Introduce();
-            Student stud = new Student();
-            stud.Age = -10;
+            Student stud = new Student
+            {
+                Age = -10
+            };
             stud.Introduce();
             Console.ReadKey();
         }
@@ -51,7 +53,7 @@ namespace Property
                 }
             }
         }
-        public string Gender//定义表示性别的自动属性
+        public string Gender//定义表示性别的自动属性,自动实现后备成员变量,编译器会自动创建private string Gender
         {
             get;
             set;
@@ -94,3 +96,8 @@ namespace Property
 //set函数由一个特殊的关键字value,它是set函数的隐式参数.在set函数中通过value参数传递数据,并赋值给变量成员
 //在类中,一个属性不一定同时有get和set,则两个函数是否存在决定了这个属性是只读属性还是只写属性,或是读写属性
 //类中最好不要用public或protected的实例字段,避免将字段直接公开,而应采用private,通过属性访问器来对类进行版本控制
+//
+//一些开发人员可能会担心通过属性访问字段,而不是直接访问字段,这些额外的函数调用是否会增加系统开销,导致性能下降
+//其实无需担心性能损失,C#代码会编译成IL,然后在运行时即时编译为本地可执行代码,JIT编译器可以生成高度优化的代码
+//并在适当时随意的内联代码(即用内联代码来替代函数调用),如果实现某个方法或者属性仅仅是调用一个方法或返回一个字段
+//该方法或属性肯定是内联的,但注意,在何处内联代码是完全由CLR决定的,无法像C++那样用inline关键字控制哪些方法内联

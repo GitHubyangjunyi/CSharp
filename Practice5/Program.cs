@@ -1,4 +1,4 @@
-﻿using System;
+﻿    using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,26 +10,26 @@ namespace Practice5
     {
         static void Main(string[] args)
         {
-            int n, i, j;
-            n = Convert.ToInt32(Console.ReadLine());
-            for (i = 1; i <= (n - 1) / 2; i++)
-            {
-                for (j = 1; j <= n; j++)
-                {
-                    if (j == ((n + 1) / 2))
-                    {
-                        Console.Write("*");
-                    }
-                    else
-                        Console.Write("x");
-                }
-                Console.WriteLine();
-            }
+            //int n, i, j;
+            //n = Convert.ToInt32(Console.ReadLine());
+            //for (i = 1; i <= (n - 1) / 2; i++)
+            //{
+            //    for (j = 1; j <= n; j++)
+            //    {
+            //        if (j == ((n + 1) / 2))
+            //        {
+            //            Console.Write("*");
+            //        }
+            //        else
+            //            Console.Write("x");
+            //    }
+            //    Console.WriteLine();
+            //}
             //int[][] jArr = new int[3][];
             //jArr[0] = new int[5];
             //jArr[1] = new int[4];
             //jArr[2] = new int[2];
-            int[][] jArr = new int[n][];
+            //int[][] jArr = new int[n][];
             //for (i = 0; i < n; i++)
             //{
             //    for (j = 0; j < jArr.GetLength(i)-1; j++)
@@ -46,12 +46,26 @@ namespace Practice5
             //    }
             //    Console.WriteLine();
             //}
-            for (int a = 0; a < n; a++)
+            //for (int a = 0; a < n; a++)
+            //{
+            //    foreach (int b in jArr[1])
+            //    {
+            //        Console.Write(b + "\t");
+            //    }
+            //}
+            Console.WriteLine("从键盘上输入一个数");
+            int i = int.Parse(Console.ReadLine());
+            for (int b = 1; b <= i; b++)
             {
-                foreach (int b in jArr[1])
+                for (int a = 1; a <= i - b; a++)
                 {
-                    Console.Write(b + "\t");
+                    Console.Write(" ");
                 }
+                for (int c = 1; c <= 2 * b - 1; c++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
             }
             Console.ReadKey();
         }

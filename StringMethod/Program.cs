@@ -25,7 +25,22 @@ namespace StringMethod
             Console.WriteLine(str6);
             String str7 = str2.Substring(10);//Substring()方法可以返回一个从指定位置开始并直到末尾的字符串
             Console.WriteLine(str7);
+            ////////////////////////////////////////
+            Console.WriteLine("////////////////////////////////////////");
+            string s1 = "a string";
+            string s2 = s1;
+            Console.WriteLine(s1);
+            Console.WriteLine(s2);
+            s1 = "b string";
+            Console.WriteLine(s1);
+            Console.WriteLine(s2);
             Console.ReadKey();
         }
     }
 }
+//尽管这是一个值类型的赋值,但string是一个引用类型
+//string对象被分配在堆上,而不是栈上
+//因此,当把一个字符串变量赋予另一个字符串时,会得到对内存中同一个字符串的两个引用
+//但是,字符串是不可改变的,修改其中一个字符串,就会创建一个全新的string对象,而另一个字符串不发生任何变化这实际上是运算符重载的结果
+//string对象是不可改变的,每次使用string中的方法都会在内存中创建一个新的字符串对象,增大系统开销这时候就可以使用
+//StringBuilder类以提高性能

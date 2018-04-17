@@ -10,7 +10,6 @@ namespace Event3        //重构Event2的例子,使其符合微软的规范
     {
         static void Main(string[] args)
         {
-            //实例化一个出版社
             Publisher publisher = new Publisher();
             Console.Write("请输入要发行的杂志：");
             string name = Console.ReadLine();

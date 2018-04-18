@@ -11,7 +11,6 @@ namespace Event2
         static void Main(string[] args)
         {
             {
-                //实例化一个出版社
                 Publisher publisher = new Publisher();
                 //给这个出火影忍者的事件注册感兴趣的订阅者，此例中是小明
                 //注册事件,事件发生时会通知所有该事件的订阅者,想要被通知就要注册事件

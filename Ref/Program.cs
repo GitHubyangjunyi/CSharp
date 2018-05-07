@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+//关于这一程序,可以转到CPlusPlus解决方案下的指针与引用小项目下查看,异曲同工之妙
 namespace Ref                 //ref参数必须在方法调用前赋值
 {
     class Program
